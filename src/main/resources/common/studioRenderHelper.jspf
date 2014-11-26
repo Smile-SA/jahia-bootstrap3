@@ -1,0 +1,14 @@
+<c:if test="${isStudioMode}">
+    <span class="label label-default">
+        <c:if test="${not empty id.string}">
+            #${id.string}
+        </c:if>
+        <c:if test="${fn:contains(classes,' ')}">
+            <c:forTokens items="${classes}" var="class" delims=" " varStatus="varStatus">
+                <c:set var="classesAsString" value="${classesAsString}.${class}"/>
+            </c:forTokens>
+        </c:if>
+        ${classesAsString}
+    </span>
+    <div class="clearfix" style="margin-bottom: 10px; border-bottom: 1px solid #999999">&nbsp;</div>
+</c:if>

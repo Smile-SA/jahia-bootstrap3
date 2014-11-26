@@ -1,0 +1,60 @@
+<bootstrap3 = 'http://www.smile.fr/jahia/bootstrap3/1.0'>
+<j = 'http://www.jahia.org/jahia/1.0'>
+<jnt = 'http://www.jahia.org/jahia/nt/1.0'>
+<jmix = 'http://www.jahia.org/jahia/mix/1.0'>
+<jcr = 'http://www.jcp.org/jcr/1.0'>
+
+[bootstrap3:container] > jnt:content, jmix:layoutComponentContent
+ - id (string)
+ - additionalClasses (string) < '^([A-Za-z]{1}[-a-zA-Z0-9]* ?)*$'
+ - fluid (boolean) indexed=no
+ + * (jmix:droppableContent) = jmix:droppableContent
+
+[bootstrap3:row] > jnt:content, jmix:layoutComponentContent orderable
+ - id (string)
+ - additionalClasses (string) < '^([A-Za-z]{1}[-a-zA-Z0-9]* ?)*$'
+ - fluid (boolean) indexed=no
+ + * (bootstrap3:column) = bootstrap3:column
+
+[bootstrap3:column] > jnt:content, jmix:layoutComponentContent, jmix:list
+ - id (string)
+ - additionalClasses (string) < '^([A-Za-z]{1}[-a-zA-Z0-9]* ?)*$'
+ - size (string, choicelist[resourceBundle])="1" < "1","2","3","4","5","6","7","8","9","10","11","12"
+ + * (jmix:droppableContent) = jmix:droppableContent
+
+[jmix:carousel] > jmix:templateMixin mixin
+ extends = jmix:list, jnt:area
+ itemtype = layout
+ - numberToDisplay (long) indexed=no
+ - displayControls (boolean)
+ - interval (string) indexed=no
+
+[jmix:columns] > jmix:templateMixin mixin
+ extends = jmix:list, jnt:area
+ itemtype = layout
+- j:columns (long) = 3 autocreated
+
+[jnt:submitButton] > jnt:formButton
+ - jcr:title (string) =Submit i18n boost=2.0 mandatory
+ - id (string)
+ - additionalClasses (string) < '^([A-Za-z]{1}[-a-zA-Z0-9]* ?)*$'
+ 
+[jnt:resetButton] > jnt:formButton
+ - jcr:title (string) =Reset i18n boost=2.0 mandatory
+ - id (string)
+ - additionalClasses (string) < '^([A-Za-z]{1}[-a-zA-Z0-9]* ?)*$'
+ 
+[jnt:passwordField] > jnt:formElement
+ - size (long) = 20 autocreated
+ - maxLength (long) = 30 autocreated
+  
+[jnt:emailField] > jnt:formElement
+ 
+[jnt:phoneField] > jnt:formElement
+
+[jnt:regexValidation] > jnt:formElementValidation
+ - regex (string) mandatory
+ - errorMessage (string)
+ 
+ 
+

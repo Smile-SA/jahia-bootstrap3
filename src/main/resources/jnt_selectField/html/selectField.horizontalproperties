@@ -1,0 +1,2 @@
+# For Jahia 7 only | If Jahia 6, you can comment this line
+cache.requestParameters=webflow*
