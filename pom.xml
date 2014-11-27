@@ -11,10 +11,11 @@
         <artifactId>jahia-modules</artifactId>
         <version>7.0.0.2</version>
     </parent>
-    <scm>
-        <connection>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3.git</connection>
-        <developerConnection>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3.git</developerConnection>
-        <url>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3.git</url>        
+    
+     <scm>
+        <connection>scm:git:git@github.com:Smile-SA/jahia-bootstrap3.git</connection>
+        <url>scm:git:git@github.com:Smile-SA/jahia-bootstrap3.git</url>
+        <developerConnection>scm:git:git@github.com:Smile-SA/jahia-bootstrap3.git</developerConnection>
     </scm>
     <!-- =========== -->
     <!-- = General = -->
