@@ -59,8 +59,11 @@ Installation
 ------------
 
 ### Maven
-
 Le module est disponible sur le repository maven :
+http://smile-sa.github.com/maven-repository/releases/org/jahia/modules
+
+
+Pour ajouter récupérer la dépendance depuis un projet maven, il faut ajouter le repository suivant dans votre pom.xml :
 
     <repository>
           <id>smile-github-repository</id>
@@ -68,7 +71,7 @@ Le module est disponible sur le repository maven :
         <url>http://smile-sa.github.com/maven-repository/releases</url>
     </repository>
 
-L'artifact est :
+Et la dépendance :
 
         <dependency>
             <groupId>org.jahia.modules</groupId>
