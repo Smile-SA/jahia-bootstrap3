@@ -15,15 +15,13 @@ Il y a trois types de composants:
 
 Voici le code pour obtenir une grille comme le montre l’image ci-dessous
 
-    <code class="html">
-       <div class="container">
+      <div class="container">
           <div class="col-xs-1"></div> <!-- x12 -->
           <div class="col-xs-4"></div> <div class="col-xs-4"></div> <div class="col-xs-4"></div>
           <div class="col-xs-4"></div> <div class="col-xs-8"></div>
           <div class="col-xs-6"></div> <div class="col-xs-6"></div>
           <div class="col-xs-12"></div>
        </div>
-    </code>
 
 Les colonnes utilisent les classes **.col-xs-*** puisque ce sont les seules classes fonctionnant sans Media Queries.
 L’ajout d’une colonne laisse le choix de ne pas utiliser une classe de répartition mais simplement une classe de positionnement telle que **.pull-right** ou **.pull-left**.
@@ -55,3 +53,28 @@ La liste en colonnes correspond à la vue **carousel** ou l’ou peux règler :
 -   **interval** : la vitesse de défilement
 
 http://getbootstrap.com/javascript/#carousel
+
+
+Installation
+------------
+
+### Maven
+
+Le module est disponible sur le repository maven :
+    <repository>
+        <id>smile-github-repository</id>
+        <name>Smile Github repository</name>
+        <url>http://smile-sa.github.com/maven-repository/releases</url>
+    </repository>
+
+L'artifact est :    
+    
+        <dependency>
+            <groupId>org.jahia.modules</groupId>
+            <artifactId>bootstrap3</artifactId>
+            <version>2.1</version>
+            <type>jar</type>
+        </dependency>
+        
+
+    
