@@ -61,14 +61,15 @@ Installation
 ### Maven
 
 Le module est disponible sur le repository maven :
+
     <repository>
-        <id>smile-github-repository</id>
-        <name>Smile Github repository</name>
+          <id>smile-github-repository</id>
+              <name>Smile Github repository</name>
         <url>http://smile-sa.github.com/maven-repository/releases</url>
     </repository>
 
-L'artifact est :    
-    
+L'artifact est :
+
         <dependency>
             <groupId>org.jahia.modules</groupId>
             <artifactId>bootstrap3</artifactId>
