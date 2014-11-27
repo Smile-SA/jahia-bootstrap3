@@ -12,10 +12,9 @@
         <version>7.0.0.2</version>
     </parent>
     <scm>
-        <connection>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3</connection>
-        <developerConnection>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3</developerConnection>
-        <url>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3/tree/${project.scm.tag}</url>
-        <tag>jahia7</tag>
+        <connection>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3.git</connection>
+        <developerConnection>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3.git</developerConnection>
+        <url>scm:git:ssh://git@git.smile.fr/jahia/bootstrap3.git</url>        
     </scm>
     <!-- =========== -->
     <!-- = General = -->
