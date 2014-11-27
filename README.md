@@ -65,20 +65,20 @@ http://smile-sa.github.com/maven-repository/releases/org/jahia/modules
 
 Pour ajouter récupérer la dépendance depuis un projet maven, il faut ajouter le repository suivant dans votre pom.xml :
 
-    <repository>
-          <id>smile-github-repository</id>
-              <name>Smile Github repository</name>
-        <url>http://smile-sa.github.com/maven-repository/releases</url>
-    </repository>
+      <repository>
+            <id>smile-github-repository</id>
+            <name>Smile Github repository</name>
+            <url>http://smile-sa.github.com/maven-repository/releases</url>
+      </repository>
 
 Et la dépendance :
 
-        <dependency>
+      <dependency>
             <groupId>org.jahia.modules</groupId>
             <artifactId>bootstrap3</artifactId>
             <version>2.1</version>
             <type>jar</type>
-        </dependency>
+      </dependency>
         
 
     
