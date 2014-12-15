@@ -75,14 +75,14 @@
       <plugin>
         <artifactId>maven-install-plugin</artifactId>
         <version>2.5.2</version>
-      </plugin>
+      </plugin><!--
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
         <version>2.5.1</version>
         <configuration>
           <arguments>-DaltDeploymentRepository=/${altDeploymentRepository}</arguments>
         </configuration>
-      </plugin>
+      </plugin>-->
     </plugins>
   </build>
 </project>
